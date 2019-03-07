@@ -1,2 +1,9 @@
 # git remote rm origin
-# git remote add origin git@github.com:Jancly/login.git
+# git remote add origin git@github.com:Jancly/login.git  远程仓库的连接
+
+
+git add 上传文件命令.txt 
+git commit -m "one upload"
+git push origin master
+
+
