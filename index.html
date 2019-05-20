@@ -1,0 +1,86 @@
+<!doctype html>
+<html>
+<head>
+<!-- 当前网页的三要素 -->
+<meta charset="UTF-8">
+<meta name="Keywords" content="关键词，关键字">
+<meta name="Description" content="描述信息">
+<meta name="viewport" content="width=device-width,initial-scale=1,">
+<title>表白神器</title>
+<script src= "lovebiaobai/js/chen.js"> </script>
+<script src= "lovebiaobai/js/jquery-3.3.1.min.js"> </script>
+<link href="lovebiaobai/love.css" type="text/css" rel="stylesheet">
+   
+	<script src= "lovebiaobai/js/chur.min.js"> </script>
+</head>
+<body id="bj">
+<div class="love">
+<h1><marquee behavior="alternate">表白</marquee></h1>
+
+<div class="box">
+	<div class="pic">
+	<ul>
+		<li><img src="lovebiaobai/img/11.png"></li>
+		<li><img src="lovebiaobai/img/12.png"></li>
+		<li><img src="lovebiaobai/img/13.png"></li>
+		<li><img src="lovebiaobai/img/14.png"></li>
+		<li><img src="lovebiaobai/img/15.png"></li>
+		<li><img src="lovebiaobai/img/16.png"></li>
+	
+	
+	
+	</ul>
+	</div>
+	
+
+</div>
+	<div class="aixin">
+		<img src="lovebiaobai/image/xin1.png" class="xin">
+		<img src="lovebiaobai/image/xin.png" class="xin1">
+		<img src="lovebiaobai/image/aixin.png" class="xin2">
+		<img src="lovebiaobai/image/aixin.png" class="xin3">
+		<img src="lovebiaobai/image/aixin.png" class="xin4">
+		<img src="lovebiaobai/image/aixin.png" class="xin5">
+		<img src="lovebiaobai/image/aixin.png" class="xin6">
+		<img src="lovebiaobai/image/aixin.png" class="xin7">
+		<img src="lovebiaobai/image/aixin.png" class="xin8">
+	
+	</div>
+	
+	<div id="text" ></div>
+</div>
+	<audio src="lovebiaobai/music/1.mp3" autoplay=true hidden="true" loop="true"></audio>
+	
+	
+  <script>
+  //設定文字  初见倾心，再见痴心，终于费心，欲得芳心，想得催心，难道你心，不懂我心，如此狠心，让我痛心。当我第一次看见你时,艺艺送给彩红宝贝
+  var loveCode = "初见倾心，再见痴心，终于费心，欲得芳心，想得催心。彩红宝贝艺艺喜欢你,520快乐";
+  var i= 0;
+  $(function(){//当前頁面加載完成抉行
+  //找到所有ul'下面的i
+  //$(".pic ul li").each(function(i){ //拿到所有的下棕索引012345独坐相思椅，手握相思笔，望着相思月，想着相思的你、、
+ //計算旋綾的角度$(" .pic ul 1i'),size(荻取ul下面i的个数
+	//  var deg= 360/$(".pic ul li").size();
+	  //S(this)指定当前的i
+ // $(this).css({"transform":"rotateY("+i*deg+"deg)translateZ(240px)"});
+ // });
+  typing();
+  autoby(bj,6);
+	  
+  })
+  //打印文字
+  function typing(){
+  var myDiv = document.getElementById("text");
+	  myDiv.innerHTML += loveCode.charAt(i);
+  i++;
+  var id = setTimeout(typing,200);
+	  if (i==loveCode.length){
+  //清除定吋器
+  clearTimeout(id);
+		  }
+		  }
+  </script>
+
+
+</body>
+</html>
